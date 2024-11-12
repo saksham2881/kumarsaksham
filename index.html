@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Saksham - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('reading-7334749_1280.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .profile-image {
+            flex: 1;
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .profile-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            flex: 3;
+            padding-left: 20px;
+        }
+        h2 {
+            color: #1a73e8;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .content section {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeIn 1s forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content section:hover {
+            transform: scale(1.08); /* Increased scale for noticeable zoom */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More shadow on hover */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .link {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="1684308638494.jfif" alt="Profile Picture">
+        </div>
+        <div class="content">
+            <header>
+                <h1>Kumar Saksham</h1>
+                <p>IT Professional | Web Developer | Innovator</p>
+                <a href="mailto:kumarsaksham1882@gmail.com" class="link">kumarsaksham1882@gmail.com</a> |
+                <a href="https://github.com/saksham2881" class="link" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/kumar-saksham-340010223" class="link" target="_blank">LinkedIn</a>
+            </header>
+
+            <section>
+                <h2>Summary</h2>
+                <div class="content-section">
+                    <p>Hello! I’m Kumar Saksham, an enthusiastic and driven IT professional with a passion for creating impactful digital experiences and securing the digital world. Currently pursuing my Master's in Information Technology with a specialization in Cybersecurity at IIIT Allahabad, I have a strong foundation in both web development and cybersecurity. My journey in tech has been fueled by a curiosity to understand complex systems, from designing intuitive user interfaces to ensuring data security and privacy.</p>
+                    <p>With hands-on experience in developing responsive and high-quality web applications, I am equally focused on understanding the intricacies of cybersecurity—protecting applications from threats, securing networks, and ensuring data integrity. I strive to blend my skills in front-end development, back-end solutions, and cybersecurity best practices to create robust, user-centered, and secure digital solutions. I am excited to bring innovation and security together, aiming to make the web a safer and more seamless experience for everyone.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <div class="content-section">
+                    <ul>
+                        <li>Web Development, HTML, CSS, JavaScript</li>
+                        <li>Express.js, MongoDB, Node.js, Next.js</li>
+                        <li>MySQL, C, C++, UI/UX Design</li>
+                        <li>Tools: Figma, Lottie, After Effects, Postman, Adobe XD</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <div class="content-section">
+                    <p><strong>Freelance Front-End Developer:</strong> Engaged in various freelance projects as a front-end developer, delivering high-quality and responsive web applications.</p>
+                    <p><strong>Teaching Assistant at IIIT Allahabad:</strong> Assisted professors in conducting undergraduate courses, enhancing communication skills and understanding of subjects taught.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Delayed fade-in effect for each section
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".content section");
+            sections.forEach((section, index) => {
+                section.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+    </script>
+</body>
+</html>
